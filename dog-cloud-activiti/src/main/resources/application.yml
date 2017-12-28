@@ -1,0 +1,17 @@
+server:
+  port: 20100
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/activitinew?characterEncoding=utf8&useSSL=true
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+  activiti:
+    check-process-definitions: true
+security:
+  basic:
+    enabled: false
